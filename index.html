@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -7,134 +7,40 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
 /* ===== Reset & Body ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background: #0f0f0f;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  text-align: center;
-}
+* {margin:0;padding:0;box-sizing:border-box;}
+body {background:#0f0f0f;font-family:'Roboto',sans-serif;color:white;text-align:center;}
 
 /* ===== Hero Section ===== */
-.hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation: fadeUp 1.5s ease;
-}
-.hero img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  border: 4px solid gold;
-}
-.hero h1 {
-  font-size: 50px;
-  margin-bottom: 10px;
-}
-.hero span {
-  color: gold;
-}
-.bio {
-  font-size: 18px;
-  max-width: 600px;
-  opacity: 0.8;
-  margin-bottom: 20px;
-  min-height: 24px;
-}
+.hero {height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;animation:fadeUp 1.5s ease;}
+.hero img {width:150px;height:150px;border-radius:50%;margin-bottom:20px;border:4px solid gold;}
+.hero h1 {font-size:50px;margin-bottom:10px;}
+.hero span {color:gold;}
+.bio {font-size:18px;max-width:600px;opacity:0.8;margin-bottom:20px;min-height:24px;}
 
 /* ===== Button ===== */
-button {
-  padding: 12px 30px;
-  background: linear-gradient(45deg, gold, orange);
-  border: none;
-  border-radius: 30px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-  box-shadow: 0 0 10px gold;
-}
-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 25px gold;
-}
+button {padding:12px 30px;background:linear-gradient(45deg,gold,orange);border:none;border-radius:30px;font-weight:bold;cursor:pointer;transition:0.3s;box-shadow:0 0 10px gold;}
+button:hover {transform:scale(1.1);box-shadow:0 0 25px gold;}
 
 /* ===== Social Icons ===== */
-.socials {
-  margin-top: 15px;
-}
-.socials a {
-  margin: 0 10px;
-  color: white;
-  font-size: 28px;
-  transition: 0.3s;
-}
-.socials a:hover {
-  color: gold;
-  transform: scale(1.2);
-}
+.socials {margin-top:15px;}
+.socials a {margin:0 10px;color:white;font-size:28px;transition:0.3s;}
+.socials a:hover {color:gold;transform:scale(1.2);}
 
 /* ===== Skills ===== */
-.skills {
-  padding: 50px 20px;
-}
-.skill-box {
-  display: inline-block;
-  background: rgba(255,255,255,0.05);
-  padding: 20px;
-  margin: 10px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  transition: 0.3s;
-}
-.skill-box:hover {
-  transform: translateY(-10px);
-  background: rgba(255,255,255,0.1);
-}
+.skills {padding:50px 20px;}
+.skill-box {display:inline-block;background:rgba(255,255,255,0.05);padding:20px;margin:10px;border-radius:15px;backdrop-filter:blur(10px);transition:0.3s;}
+.skill-box:hover {transform:translateY(-10px);background:rgba(255,255,255,0.1);}
 
 /* ===== Projects ===== */
-.projects {
-  padding: 50px 20px;
-}
-.project-box {
-  display: inline-block;
-  background: rgba(255,255,255,0.05);
-  padding: 20px;
-  margin: 10px;
-  border-radius: 15px;
-  width: 250px;
-  backdrop-filter: blur(10px);
-  transition: 0.3s;
-}
-.project-box:hover {
-  transform: translateY(-10px);
-  background: rgba(255,255,255,0.1);
-}
+.projects {padding:50px 20px;}
+.project-box {display:inline-block;background:rgba(255,255,255,0.05);padding:20px;margin:10px;border-radius:15px;width:250px;backdrop-filter:blur(10px);transition:0.3s;}
+.project-box:hover {transform:translateY(-10px);background:rgba(255,255,255,0.1);}
 
 /* ===== Footer ===== */
-footer {
-  padding: 20px;
-  opacity: 0.6;
-}
+footer {padding:20px;opacity:0.6;}
 
 /* ===== Animations ===== */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+@keyframes fadeUp {from {opacity:0;transform:translateY(40px);} to {opacity:1;transform:translateY(0);}}
 </style>
 <!-- Font Awesome for social icons -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -143,7 +49,8 @@ footer {
 
 <!-- Hero Section -->
 <div class="hero">
-  <img src="https://i.imgur.com/yourprofilepic.jpg" alt="Vignesh Profile Picture">
+  <!-- Profile Picture -->
+  <img src="https://github.com/vignesh77-coder/portfolio/blob/main/Screenshot_2026-02-14-20-23-26-95_99c04817c0de5652397fc8b56c3b3817.jpg?raw=true" alt="Vignesh Profile Picture">
   <h1>Hi, I'm <span>Vignesh</span> 👋</h1>
   <p class="bio"></p>
   <button onclick="contact()">Let's Connect</button>
@@ -179,24 +86,15 @@ footer {
 
 <script>
 // ===== Contact Button =====
-function contact() {
-  alert("Thank you for visiting my modern portfolio 😎");
-}
+function contact() {alert("Thank you for visiting my modern portfolio 😎");}
 
 // ===== Typing Bio =====
 const bioText = "I'm a passionate self-taught developer building my future before 20 🚀";
 let i = 0;
 const bioElement = document.querySelector(".bio");
-
-function typeBio() {
-  if (i < bioText.length) {
-    bioElement.innerHTML += bioText.charAt(i);
-    i++;
-    setTimeout(typeBio, 50);
-  }
-}
+function typeBio() {if(i < bioText.length){bioElement.innerHTML += bioText.charAt(i); i++; setTimeout(typeBio,50);}}
 typeBio();
 </script>
 
 </body>
-  </html>
+</html>
