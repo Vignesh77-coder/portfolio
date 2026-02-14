@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vignesh | Web Developer</title>
+
+<style>
+/* Body & Layout */
+body {
+  margin: 0;
+  background: #0f0f0f;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeUp 1.5s ease;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.hero span {
+  color: gold;
+}
+
+.hero p {
+  opacity: 0.8;
+  max-width: 600px;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: linear-gradient(45deg, gold, orange);
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px gold;
+}
+
+/* Skills Section */
+.skills {
+  padding: 50px 20px;
+}
+
+.skill-box {
+  display: inline-block;
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.skill-box:hover {
+  transform: translateY(-10px);
+  background: rgba(255,255,255,0.1);
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  opacity: 0.6;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Hero Section -->
+<div class="hero">
+  <h1>Hi, I'm <span>Vignesh</span> 👋</h1>
+  <p class="bio">
+    I'm a passionate <span style="color: gold;">self-taught developer</span> 
+    building my future before 20 🚀
+  </p>
+  <button onclick="contact()">Let's Connect</button>
+</div>
+
+<!-- Skills Section -->
+<div class="skills">
+  <h2>My Skills</h2>
+  <div class="skill-box">HTML</div>
+  <div class="skill-box">CSS</div>
+  <div class="skill-box">JavaScript</div
