@@ -19,7 +19,7 @@ body {background:#0f0f0f;font-family:'Roboto',sans-serif;color:white;text-align:
 
 /* ===== Button ===== */
 button {padding:12px 30px;background:linear-gradient(45deg,gold,orange);border:none;border-radius:30px;font-weight:bold;cursor:pointer;transition:0.3s;box-shadow:0 0 10px gold;}
-button:hover {transform:scale(1.1);box-shadow:0 0 25px gold;}
+button:hover {transform: scale(1.15) rotate(-2deg); box-shadow:0 0 35px gold;}
 
 /* ===== Social Icons ===== */
 .socials {margin-top:15px;}
@@ -29,18 +29,20 @@ button:hover {transform:scale(1.1);box-shadow:0 0 25px gold;}
 /* ===== Skills ===== */
 .skills {padding:50px 20px;}
 .skill-box {display:inline-block;background:rgba(255,255,255,0.05);padding:20px;margin:10px;border-radius:15px;backdrop-filter:blur(10px);transition:0.3s;}
-.skill-box:hover {transform:translateY(-10px);background:rgba(255,255,255,0.1);}
+.skill-box:hover {transform: translateY(-15px) rotate(-2deg); background: rgba(255,255,255,0.15); box-shadow:0 0 15px gold;}
 
 /* ===== Projects ===== */
 .projects {padding:50px 20px;}
 .project-box {display:inline-block;background:rgba(255,255,255,0.05);padding:20px;margin:10px;border-radius:15px;width:250px;backdrop-filter:blur(10px);transition:0.3s;}
-.project-box:hover {transform:translateY(-10px);background:rgba(255,255,255,0.1);}
+.project-box:hover {transform: translateY(-15px) scale(1.05); background: rgba(255,255,255,0.15); box-shadow:0 0 20px gold;}
+.project-box a {color:gold; text-decoration:none; font-weight:bold; transition:0.3s;}
+.project-box a:hover {text-decoration:underline;}
 
 /* ===== Footer ===== */
 footer {padding:20px;opacity:0.6;}
 
 /* ===== Animations ===== */
-@keyframes fadeUp {from {opacity:0;transform:translateY(40px);} to {opacity:1;transform:translateY(0);}}
+@keyframes fadeUp {from {opacity:0; transform:translateY(40px);} to {opacity:1; transform:translateY(0);}}
 </style>
 <!-- Font Awesome for social icons -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -49,8 +51,8 @@ footer {padding:20px;opacity:0.6;}
 
 <!-- Hero Section -->
 <div class="hero">
-  <!-- Profile Picture -->
-  <img src="https://raw.githubusercontent.com/Vignesh77-coder/Webimage-/refs/heads/main/IMG_20260214_220734.jpg?raw=true" alt="Vignesh Profile Picture">
+  <!-- Replace the src with your uploaded GitHub image link -->
+  <img src="?raw=true" alt="Vignesh Profile Picture">
   <h1>Hi, I'm <span>Vignesh</span> 👋</h1>
   <p class="bio"></p>
   <button onclick="contact()">Let's Connect</button>
@@ -74,9 +76,28 @@ footer {padding:20px;opacity:0.6;}
 <!-- Projects Section -->
 <div class="projects">
   <h2>Projects</h2>
-  <div class="project-box">Portfolio Website</div>
-  <div class="project-box">To-Do App</div>
-  <div class="project-box">Weather App</div>
+
+  <div class="project-box">
+    <h3>Portfolio Website</h3>
+    <p>My personal portfolio website built with HTML, CSS & JS</p>
+    <a href="https://vignesh77-coder.github.io/portfolio/" target="_blank">Live Demo</a> |
+    <a href="https://github.com/vignesh77-coder/portfolio" target="_blank">Code</a>
+  </div>
+
+  <div class="project-box">
+    <h3>To-Do App</h3>
+    <p>A task manager web app built with JavaScript</p>
+    <a href="https://vignesh77-coder.github.io/todo-app/" target="_blank">Live Demo</a> |
+    <a href="https://github.com/vignesh77-coder/todo-app" target="_blank">Code</a>
+  </div>
+
+  <div class="project-box">
+    <h3>Weather App</h3>
+    <p>Real-time weather app using API & JS</p>
+    <a href="https://vignesh77-coder.github.io/weather-app/" target="_blank">Live Demo</a> |
+    <a href="https://github.com/vignesh77-coder/weather-app" target="_blank">Code</a>
+  </div>
+
 </div>
 
 <!-- Footer -->
@@ -86,15 +107,21 @@ footer {padding:20px;opacity:0.6;}
 
 <script>
 // ===== Contact Button =====
-function contact() {alert("Thank you for visiting my modern portfolio 😎");}
+function contact() { alert("Thank you for visiting my modern portfolio 😎"); }
 
 // ===== Typing Bio =====
 const bioText = "I'm a passionate self-taught developer building my future before 20 🚀";
 let i = 0;
 const bioElement = document.querySelector(".bio");
-function typeBio() {if(i < bioText.length){bioElement.innerHTML += bioText.charAt(i); i++; setTimeout(typeBio,50);}}
+function typeBio() {
+  if (i < bioText.length) {
+    bioElement.innerHTML += bioText.charAt(i);
+    i++;
+    setTimeout(typeBio, 40); // faster typing
+  }
+}
 typeBio();
 </script>
 
 </body>
-</html>
+  </html>
